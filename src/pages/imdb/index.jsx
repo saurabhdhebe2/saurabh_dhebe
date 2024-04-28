@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import React from 'react';
-import amazonImg from '../public/assets/projects/amazon.png';
+import imdbImg from '../../../public/assets/projects/imdb.png';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 
-const netflix = () => {
+const imdb = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[50vh] relative">
@@ -13,11 +13,11 @@ const netflix = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={amazonImg}
+          src={imdbImg}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Amazon Clone</h2>
+          <h2 className="py-2">IMDB-Clone</h2>
           <h3>Next JS / Tailwind / Firebase</h3>
         </div>
       </div>
@@ -27,22 +27,22 @@ const netflix = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            I built this application in Next JS and is hosted on Vercel. This
-            app features user authentication with firebase as well as with
-            NextAuth. This application supports user authentication using
-            Next-Auth. Users are able to create a new account using their email
-            address and can then sign in. The payment feature is possible by
-            Stripe & Products info fetched by FakeStore API.
+            This app was built using Next JS and is hosted on Vercel. Users are
+            able to get what is trending movie or all time top rated movie.This
+            application is pulling movie data from an the IMDB movie API and
+            displaying different categories. It features horizontal sliding and
+            a featured selection.
           </p>
+          <br></br>
           <Link
-            href="https://github.com/fireclint/netflix-react-tailwind"
+            href="https://github.com/saurabhdhebe2/movie-app"
             target="_blank"
             rel="noreferrer"
           >
             <button className="px-8 py-2 mt-4 mr-8">Code</button>
           </Link>
           <Link
-            href="https://amazon-clone-coral-alpha.vercel.app/"
+            href="https://imdb-clone-1.vercel.app/"
             target="_blank"
             rel="noreferrer"
           >
@@ -54,9 +54,6 @@ const netflix = () => {
             <p className="text-center font-bold pb-2">Technologies</p>
             <div className="grid grid-cols-3 md:grid-cols-1">
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Next
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> React
               </p>
               <p className="text-gray-600 py-2 flex items-center">
@@ -66,13 +63,13 @@ const netflix = () => {
                 <RiRadioButtonFill className="pr-1" /> Javascript
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Firebase
+                <RiRadioButtonFill className="pr-1" /> Next
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> FakeStore API
+                <RiRadioButtonFill className="pr-1" /> TMDB API
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Stripe
+                <RiRadioButtonFill className="pr-1" /> Vercel
               </p>
             </div>
           </div>
@@ -85,4 +82,4 @@ const netflix = () => {
   );
 };
 
-export default netflix;
+export default imdb;

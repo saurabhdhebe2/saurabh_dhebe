@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import React from 'react';
-import imdbImg from '../public/assets/projects/imdb.png';
+import googleImg from '../../../public/assets/projects/google.png';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 
-const imdb = () => {
+const google = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[50vh] relative">
@@ -13,11 +13,11 @@ const imdb = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={imdbImg}
+          src={googleImg}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">IMDB-Clone</h2>
+          <h2 className="py-2">Google Clone</h2>
           <h3>Next JS / Tailwind / Firebase</h3>
         </div>
       </div>
@@ -27,22 +27,22 @@ const imdb = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            This app was built using Next JS and is hosted on Vercel. Users are
-            able to get what is trending movie or all time top rated movie.This
-            application is pulling movie data from an the IMDB movie API and
-            displaying different categories. It features horizontal sliding and
-            a featured selection.
+            I built this app to demonstrate knowledge working in Next JS and
+            accessing API endpoints. This app was built using React JS and is
+            hosted on Vercel. This application supports user authentication
+            using Next-Auth. Users are able to create a new account using their
+            email address and can then sign in. This application was built using
+            the google search engine API.
           </p>
-          <br></br>
           <Link
-            href="https://github.com/saurabhdhebe2/movie-app"
+            href="https://github.com/saurabhdhebe2/google-clone"
             target="_blank"
             rel="noreferrer"
           >
             <button className="px-8 py-2 mt-4 mr-8">Code</button>
           </Link>
           <Link
-            href="https://imdb-clone-1.vercel.app/"
+            href="https://google-clone-1-phi.vercel.app/"
             target="_blank"
             rel="noreferrer"
           >
@@ -52,7 +52,10 @@ const imdb = () => {
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4">
           <div className="p-2">
             <p className="text-center font-bold pb-2">Technologies</p>
-            <div className="grid grid-cols-3 md:grid-cols-1">
+            <div className="grid grid-cols-3 md:grid-cols-1 ">
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" /> Next
+              </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> React
               </p>
@@ -63,13 +66,10 @@ const imdb = () => {
                 <RiRadioButtonFill className="pr-1" /> Javascript
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Next
+                <RiRadioButtonFill className="pr-1" /> Next-Auth
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> TMDB API
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Vercel
+                <RiRadioButtonFill className="pr-1" /> Search Engine API
               </p>
             </div>
           </div>
@@ -82,4 +82,4 @@ const imdb = () => {
   );
 };
 
-export default imdb;
+export default google;

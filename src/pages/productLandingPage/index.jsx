@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import productLandingPageImg from '../public/assets/projects/productLandingPageImg.png';
+import productLandingPageImg from '../../../public/assets/projects/productLandingPageImg.png';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 

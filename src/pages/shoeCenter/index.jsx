@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import shoeCenterImg from '../public/assets/projects/shoeCenter.png';
+import shoeCenterImg from '../../../public/assets/projects/shoeCenter.png';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 
