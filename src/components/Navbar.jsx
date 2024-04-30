@@ -183,34 +183,34 @@ const Navbar = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <span className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                     <FaLinkedinIn />
-                  </span>
+                  </div>
                 </Link>
                 <Link
                   href="https://github.com/saurabhdhebe2"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <span className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                     <FaGithub />
-                  </span>
+                  </div>
                 </Link>
                 <Link href="/#contact">
-                  <span
+                  <div
                     onClick={() => setNav(!nav)}
                     className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
                   >
                     <AiOutlineMail />
-                  </span>
+                  </div>
                 </Link>
                 <Link href="/resume">
-                  <span
+                  <div
                     onClick={() => setNav(!nav)}
                     className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
                   >
                     <BsFillPersonLinesFill />
-                  </span>
+                  </div>
                 </Link>
               </div>
             </div>
