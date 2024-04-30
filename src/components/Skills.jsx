@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import Html from '../../public/assets/skills/html.png';
 import Css from '../../public/assets/skills/css.png';
+import nd from '../../public/assets/skills/nd.png';
 import Javascript from '../../public/assets/skills/javascript.png';
 import typeScript from '../../public/assets/skills/typeScriptJs.png';
 import ReactImg from '../../public/assets/skills/react.png';
@@ -16,7 +17,6 @@ import mongo from '../../public/assets/skills/mongo.png';
 import NextJS from '../../public/assets/skills/nextjs.png';
 import angularJs from '../../public/assets/skills/angular.png';
 import mySql from '../../public/assets/skills/mySql.png';
-// import nodeJs from '../../public/assets/skills/nodejs.png';
 import expressJs from '../../public/assets/skills/expressJs.png';
 
 const Skills = () => {
@@ -71,7 +71,7 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                {/* <Image src={nodeJs} width="94px" height="64px" alt="/" /> */}
+                <Image src={nd} width="94px" height="64px" alt="/" />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>NodeJs</h3>
