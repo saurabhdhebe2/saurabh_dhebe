@@ -17,6 +17,12 @@ const Projects = () => {
         <h2 className="py-4">What I&apos;ve Built</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
+            title="Film-maker portfolio"
+            backgroundImg={sh_portfolio}
+            projectUrl="/film_maker_portfolio"
+            tech="Next JS"
+          />
+          <ProjectItem
             title="ShoeCenter"
             backgroundImg={shoeCenterImg}
             projectUrl="/shoeCenter"
@@ -44,12 +50,6 @@ const Projects = () => {
             title="Amazon-clone"
             backgroundImg={amazonImg}
             projectUrl="/amazon"
-            tech="Next JS"
-          />
-          <ProjectItem
-            title="Film-maker portfolio"
-            backgroundImg={sh_portfolio}
-            projectUrl="/film_maker_portfolio"
             tech="Next JS"
           />
         </div>
