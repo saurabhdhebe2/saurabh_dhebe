@@ -16,7 +16,7 @@ import mongo from '../../public/assets/skills/mongo.png';
 import NextJS from '../../public/assets/skills/nextjs.png';
 import angularJs from '../../public/assets/skills/angular.png';
 import mySql from '../../public/assets/skills/mySql.png';
-import nodeJs from '../../public/assets/skills/nodejs.png';
+// import nodeJs from '../../public/assets/skills/nodejs.png';
 import expressJs from '../../public/assets/skills/expressJs.png';
 
 const Skills = () => {
@@ -71,7 +71,7 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image src={nodeJs} width="94px" height="64px" alt="/" />
+                {/* <Image src={nodeJs} width="94px" height="64px" alt="/" /> */}
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>NodeJs</h3>
