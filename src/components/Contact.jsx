@@ -1,16 +1,20 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 import ContactImg from '../../public/assets/contact.jpg';
 import emailjs from 'emailjs-com';
+import FlashMessage from './Flashmessage';
 
 const Contact = () => {
+  const [flashMessage, setFlashMessage] = useState(null);
+
   const form = useRef();
+
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
@@ -23,16 +27,45 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          if (result.status === 200) {
+            setFlashMessage({
+              message: 'Email sent successfully!',
+              type: 'success',
+            });
+          } else {
+            setFlashMessage({
+              message: 'Error sending email. Please try again later.',
+              type: 'error',
+            });
+          }
         },
         (error) => {
           console.log(error.text);
+          setFlashMessage({
+            message: 'Error sending email. Please try again later.',
+            type: 'error',
+          });
         }
       );
     e.target.reset();
+    setFlashMessage(false);
   };
+
+  useEffect(() => {
+    let timer;
+    if (flashMessage) {
+      timer = setTimeout(() => {
+        setFlashMessage(null);
+      }, 2000); // 2 seconds
+    }
+    return () => clearTimeout(timer);
+  }, [flashMessage]);
 
   return (
     <div id="contact" className="w-full lg:h-screen">
+      {flashMessage && (
+        <FlashMessage message={flashMessage.message} type={flashMessage.type} />
+      )}
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full ">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
           Contact
