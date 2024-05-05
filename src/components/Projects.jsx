@@ -5,6 +5,7 @@ import googleImg from '../../public/assets/projects/google.png';
 import sh_portfolio from '../../public/assets/projects/sh_portfolio.png';
 import amazonImg from '../../public/assets/projects/amazon.png';
 import productLandingPageImg from '../../public/assets/projects/productLandingPageImg.png';
+import simon from '../../public/assets/projects/simon.png';
 import ProjectItem from './ProjectItem';
 
 const Projects = () => {
@@ -17,9 +18,33 @@ const Projects = () => {
         <h2 className="py-4">What I&apos;ve Built</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
-            title="Film-maker portfolio"
+            title="Film maker's portfolio"
             backgroundImg={sh_portfolio}
             projectUrl="/film_maker_portfolio"
+            tech="Next JS"
+          />
+          <ProjectItem
+            title="Simon game"
+            backgroundImg={simon}
+            projectUrl="/simon"
+            tech="HTML/CSS/JS"
+          />
+          <ProjectItem
+            title="Amazon-clone"
+            backgroundImg={amazonImg}
+            projectUrl="/amazon"
+            tech="Next JS"
+          />
+          <ProjectItem
+            title="Google-clone"
+            backgroundImg={googleImg}
+            projectUrl="/google"
+            tech="Next JS"
+          />
+          <ProjectItem
+            title="IMDB-clone"
+            backgroundImg={imdbImg}
+            projectUrl="/imdb"
             tech="Next JS"
           />
           <ProjectItem
@@ -33,24 +58,6 @@ const Projects = () => {
             backgroundImg={productLandingPageImg}
             projectUrl="/productLandingPage"
             tech="HTML/CSS"
-          />
-          <ProjectItem
-            title="IMDB-clone"
-            backgroundImg={imdbImg}
-            projectUrl="/imdb"
-            tech="Next JS"
-          />
-          <ProjectItem
-            title="Google-clone"
-            backgroundImg={googleImg}
-            projectUrl="/google"
-            tech="Next JS"
-          />
-          <ProjectItem
-            title="Amazon-clone"
-            backgroundImg={amazonImg}
-            projectUrl="/amazon"
-            tech="Next JS"
           />
         </div>
       </div>

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import sh_portfolio from '../../../public/assets/projects/sh_portfolio.png';
+import simon from '../../../public/assets/projects/simon.png';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 
@@ -13,12 +13,12 @@ const imdb = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={sh_portfolio}
+          src={simon}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Film maker&apos;s portfolio</h2>
-          <h3>Next JS /Tailwind CSS </h3>
+          <h2 className="py-2">Simon Game</h2>
+          <h3>HTML / CSS / JS</h3>
         </div>
       </div>
 
@@ -27,19 +27,21 @@ const imdb = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            This app was built using Next JS and is hosted on Vercel. Made this
+            It&apos;s the exciting game of colors and sounds in which players
+            must repeat random sequences of flashing lights by pressing the
+            colored pads in the correct order.This app was built using HTML and
+            is hosted on Vercel.
           </p>
-          <p>for my brother&apos;s portfolio.</p>
           <br></br>
           <Link
-            href="https://github.com/saurabhdhebe2/sh_portfolio"
+            href="https://github.com/saurabhdhebe2/simon-Game"
             target="_blank"
             rel="noreferrer"
           >
             <button className="px-8 py-2 mt-4 mr-8">Code</button>
           </Link>
           <Link
-            href="https://shubhamdhebe.com/"
+            href="https://simon-game-blush.vercel.app/"
             target="_blank"
             rel="noreferrer"
           >
@@ -51,16 +53,13 @@ const imdb = () => {
             <p className="text-center font-bold pb-2">Technologies</p>
             <div className="grid grid-cols-3 md:grid-cols-1">
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> React
+                <RiRadioButtonFill className="pr-1" /> HTML
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Tailwind
+                <RiRadioButtonFill className="pr-1" /> CSS
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Javascript
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Next
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Vercel
