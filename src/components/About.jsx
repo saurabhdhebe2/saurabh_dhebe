@@ -5,7 +5,7 @@ import AboutImg from '../../public/assets/about.jpg';
 
 const About = () => {
   return (
-    <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
+    <div id="about" className="w-full  p-2 flex items-center py-16">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
           <p className="uppercase text-xl tracking-widest text-[#5651e5]">
@@ -13,15 +13,38 @@ const About = () => {
           </p>
           <h2 className="py-4">Who I Am</h2>
           <p className="py-2 text-gray-600">
-            I specialize in building mobile responsive front-end UI applications
-            that connect with API’s and other backend technologies. I’m
-            passionate about learning new technologies and understand there is
-            more than one way to accomplish a task. Though I am most proficient
-            in building front-end applications using HTML, CSS, Javascript, and
-            React, I am a quick learner and can pick up new tech stacks as
-            needed. I believe that being a great developer is not using one
-            specific language, but choosing the best tool for the job.
+            Hey there! I&apos;m a developer who loves building mobile-responsive
+            UI applications and ensuring they play nice with APIs and various
+            backend technologies. My forte lies in crafting sleek interfaces
+            using HTML, CSS, JavaScript, and React, all geared towards providing
+            users with the smoothest experience, regardless of the device
+            they&apos;re on.
           </p>
+          <br />
+          <p className="py-2 text-gray-600">
+            I&apos;m all about learning new stuff. There are countless ways to
+            tackle a problem, right? While I&apos;m pretty comfy with HTML, CSS,
+            JavaScript, and React, I&apos;m also quick to pick up new tech
+            stacks. In my view, staying adaptable is key as project needs
+            evolve.
+          </p>
+          <br />
+          <p className="py-2 text-gray-600">
+            In 2024, I plunged into the world of artificial intelligence. The
+            possibilities with LLM models and other AI tech? Mind-blowing!
+            I&apos;m fascinated by exploring AI and its applications. I truly
+            believe that being a top-notch developer isn&apos;t about sticking
+            to one language or framework; it&apos;s about using the right tools
+            for each unique challenge.
+          </p>
+          <br />
+          <p className="py-2 text-gray-600">
+            And hey, when it comes to stacks, I&apos;m no stranger to MERN
+            (MongoDB, Express.js, React, Node.js) or MEAN (MongoDB, Express.js,
+            Angular, Node.js). Whether it&apos;s frontend, backend, or the whole
+            enchilada, I&apos;m ready to tackle it!
+          </p>
+          <br />
 
           <Link href="/#projects">
             <p className="py-2 text-gray-600 underline cursor-pointer">
