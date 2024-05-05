@@ -30,7 +30,7 @@ const imdb = () => {
             It&apos;s the exciting game of colors and sounds in which players
             must repeat random sequences of flashing lights by pressing the
             colored pads in the correct order.This app was built using HTML and
-            is hosted on Vercel.
+            is hosted on Vercel. It is more Desktop friendly website.
           </p>
           <br></br>
           <Link
